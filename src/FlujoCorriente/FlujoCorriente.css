@@ -35,3 +35,24 @@ nav ul li a :hover{
     background-color: #485964;
     color: #fff;
 }
+
+h1, p{
+    color: #fff;
+    margin: 10px;
+    text-align: center;
+}
+
+.cards{
+   display: flex;
+   justify-content: center;
+   background-color: #8080;
+   border-radius: 20px;
+   width: 100%;
+   height: 110px;
+}
+
+
+.GraficaReporte{
+
+
+}

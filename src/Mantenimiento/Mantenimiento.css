@@ -26,3 +26,37 @@ nav ul li a :hover{
     background-color: #485964;
     color: #000;
 }
+
+.Reparación{
+    display: flex;
+    justify-content: center;
+    background-color: #414344;
+    flex-direction: column;
+}
+
+h2{
+    color: #fff;
+    font-size: 15px;
+    margin: 10px;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    color: #fff;
+    margin: 10px;
+}
+
+
+.btn{
+    background-color: #1e90ff;
+    color: #000;
+    border-radius: 10px;
+    width: 90px;
+    height: 40px;
+}
+
+.btn :hover{
+    background-color: #0b4681;
+    color: #000;
+}
