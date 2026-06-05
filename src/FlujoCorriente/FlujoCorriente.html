@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="../img/logo emca.png">
     <link rel="stylesheet" href="FlujoCorriente.css">
-    <title>Document</title>
+    <title>Flujo de Corriente</title>
 </head>
 <body>
-     <main>
+
+    <main>
         <div class="container">
             <nav>
                 <ul>
                     <li>
                         <a href="../index.html">Regresar</a>
-                        <a href="../AlertaMaxima/AlertaMaxima.html">Alerta maxima</a>
+                        <a href="../AlertaMaxima/AlertaMaxima.html">Alerta máxima</a>
                         <a href="../Revisiones/Revisiones.html">Revisiones</a>
                         <a href="../Mantenimiento/Mantenimiento.html">Mantenimiento</a>
                     </li>
@@ -23,44 +24,75 @@
         </div>
     </main>
 
-
     <section>
         <div class="FlujoCorriente">
 
             <h1>Reporte</h1>
 
-            <p>Los reportes mas actualizados se sobre las quebranas y sus respetivas zonas
-                en las cuales pedimos ,estar pendientes de las franjas en alerta o posibles torrenciales de agua
+            <p>
+                Los reportes más actualizados sobre las quebradas y sus respectivas zonas,
+                en las cuales pedimos estar pendientes de las franjas en alerta o posibles torrenciales de agua.
             </p>
-            <div class="cards">
-                <div class="GraficaReporte">
-                    <H2>Grafico de reportes del mes</H2>
+             <br>
 
-                    <button class="Ver_mas">VER MAS</button>
+            <div class="cards">
+
+                <div class="GraficaReporte">
+                    <h2>Gráfico de reportes del mes</h2>
+                    <button class="Ver_mas">VER MÁS</button>
                 </div>
 
                 <div class="diagrama_calculo">
-                    <h2>Diagrama de calculo</h2>
+                    <h2>Diagrama de cálculo</h2>
+                    <button class="Ver_mas">VER MÁS</button>
+                </div>
 
-                    <button class="Ver_mas">VER MAS</button>
+                <div class="circunferencia">
+                    <h2>Circunferencia</h2>
+                    <button class="Ver_mas">VER MÁS</button>
+                </div>
+
+                <div class="Historial_mes">
+                <h3>Reporte del mes</h3>
+
+                <canvas id="pie" width="300" height="300" style="background-color: #808080 border_radius 10px;"></canvas>
+
+                <div class="leyenda">
+                    <div class="item">
+                        <span class="color" style="background:green;"></span>
+                        Bueno (40%)
+                    </div>
+
+                    <div class="item">
+                        <span class="color" style="background:yellow;"></span>
+                        Precaución (35%)
+                    </div>
+
+                    <div class="item">
+                        <span class="color" style="background:red;"></span>
+                        Crítico (25%)
+                    </div>
                 </div>
             </div>
 
-            <div class="circunferencia">
-                <h2>Circunferencia</h2>
-
-                <button class="Ver_mas">VER MAS</button>
+            <div class="Reporte">
+                <h2>Estado de Reportes</h2>
+                <p>
+                    En esta sección se muestra el estado actual de los reportes,
+                    indicando si están en buen estado, precaución o crítico.
+                </p>
+                <button class="Ver_mas">VER MÁS</button>
             </div>
 
-            <div class="Historial_mes">
-                <h3>Reporte del mes</h3>
-                <p></p>
             </div>
+            <button id="btn_PDF" class="btn_pdf">
+                Descargar Reporte PDF
+            </button>
 
-            <button id="btn_PDF" class="btn_pdf">Descargar Reporte PDF</button>
         </div>
     </section>
 
-    <script src="../Report.js"></script>
+    <script src="FlujoCorriente.js"></script>
+
 </body>
 </html>
