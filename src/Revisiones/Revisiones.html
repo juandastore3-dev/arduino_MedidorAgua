@@ -1,28 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="../img/logo emca.png">
+    <title>Panel de Reportes</title>
     <link rel="stylesheet" href="Revisiones.css">
-    <title>Document</title>
 </head>
 <body>
-    <main>
-        <div class="container">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="../index.html">Regresar</a>
-                        <a href="../FlujoCorriente/FlujoCorriente.html">Flujo de corriente</a>
-                        <a href="../AlertaMaxima/AlertaMaxima.html">Alerta maxima</a>
-                        <a href="../Mantenimiento/Mantenimiento.html">Mantenimiento</a>
-                    </li>
-                </ul>
-            </nav>
+
+    <header class="header">
+        <h2>EMCA - Sistema de Monitoreo</h2>
+
+        <div class="header-buttons">
+            <button>Ayuda</button>
+            <button>Cerrar Sesión</button>
         </div>
-    </main>
+    </header>
+     <hr>
+    <div class="dashboard">
 
+        <!-- MENÚ IZQUIERDO -->
+        <aside class="sidebar">
 
+            <div class="logo">
+                <img src="../img/logo emca.png" alt="Logo">
+            </div>
+
+            <nav>
+                <a href="../index.html">Inicio</a>
+                <a href="../FlujoCorriente/FlujoCorriente.html">Flujo de Corriente</a>
+                <a href="../AlertaMaxima/AlertaMaxima.html">Alerta Máxima</a>
+                <a href="../Revisiones/Revisiones.html">Revisiones</a>
+                <a href="../Mantenimiento/Mantenimiento.html">Mantenimiento</a>
+            </nav>
+
+        </aside>
+
+        <!-- CONTENIDO -->
+        <main class="contenido">
+
+            <section>
+        <div class="Revisiones">
+            <h2>Revisiones</h2>
+            <p>En esta sección se pueden evidenciar las revisiones realizadas a los muros de contención, 
+                donde se puede observar que se han fortalecido y reforzado para evitar posibles desbordamientos
+                en la zona rural.
+            </p>
+
+            <div class="Conten">
+                diagramas
+            </div>
+        </div>
+    </section>
+
+        </main>
+
+    </div>
+       <script src="../Report.js"></script>
 </body>
 </html>

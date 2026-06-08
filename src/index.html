@@ -1,37 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="img/logo_emca.png">
+    <title>Panel de Reportes</title>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
 </head>
 <body>
-     <header>
-             <div class="container_principal">
-                <img src="logo" alt="log.png">
 
-                <button class="#">Perfil</button>
-                <button class="#">Ayuda</button>
-             </div>
-     </header>
+    <!-- HEADER -->
+    <header class="header">
+        <h2>Panel de Reportes</h2>
 
-    <main>
-        <div class="container">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="../src/FlujoCorriente/FlujoCorriente.html">Flujo de corriente</a>
-                        <a href="../src/AlertaMaxima/AlertaMaxima.html">Alerta maxima</a>
-                        <a href="../src/Revisiones/Revisiones.html">Revisiones</a>
-                        <a href="../src/Mantenimiento/Mantenimiento.html">Mantenimiento</a>
-                    </li>
-                </ul>
-            </nav>
+        <div class="header-buttons">
+            <button>Ayuda</button>
+            <button>Cerrar Sesión</button>
         </div>
+    </header>
+    <hr>
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <div class="dashboard">
+
+    <!-- MENÚ IZQUIERDO -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <img src="../src/img/logo emca.png" alt="Logo EMCA">
+        </div>
+
+        <nav>
+            <a href="../src/FlujoCorriente/FlujoCorriente.html">Flujo de corriente</a>
+            <a href="../src/AlertaMaxima/AlertaMaxima.html">Alerta máxima</a>
+            <a href="../src/Revisiones/Revisiones.html">Revisiones</a>
+            <a href="../src/Mantenimiento/Mantenimiento.html">Mantenimiento</a>
+        </nav>
+
+    </aside>
+
+    <!-- CONTENIDO -->
+    <main class="contenido">
+
+        <div class="card">
+            <h3>Gráfico de reportes</h3>
+            <canvas id="pie" width="300" height="300"></canvas>
+        </div>
+
+        <div class="card">
+            <h3>Diagrama de cálculo</h3>
+            <button class="btn">Ver más</button>
+        </div>
+
+        <div class="card">
+            <h3>Circunferencia</h3>
+            <button class="btn">Ver más</button>
+        </div>
+
+        <div class="card">
+            <h3>Estado de reportes</h3>
+            <button class="btn">Ver más</button>
+        </div>
+
     </main>
 
+</div>
+
     <script src="Report.js"></script>
+
 </body>
 </html>

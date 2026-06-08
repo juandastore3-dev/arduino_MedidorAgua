@@ -3,33 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="../img/logo emca.png">
+    <title>Panel de Reportes</title>
     <link rel="stylesheet" href="FlujoCorriente.css">
-    <title>Flujo de Corriente</title>
 </head>
 <body>
 
-    <main>
-        <div class="container">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="../index.html">Regresar</a>
-                        <a href="../AlertaMaxima/AlertaMaxima.html">Alerta máxima</a>
-                        <a href="../Revisiones/Revisiones.html">Revisiones</a>
-                        <a href="../Mantenimiento/Mantenimiento.html">Mantenimiento</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </main>
+    <header class="header">
+        <h2>EMCA - Sistema de Monitoreo</h2>
 
-    <section>
+        <div class="header-buttons">
+            <button>Ayuda</button>
+            <button>Cerrar Sesión</button>
+        </div>
+    </header>
+    <hr>
+
+    <div class="dashboard">
+
+        <!-- MENÚ IZQUIERDO -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <img src="../img/logo emca.png" alt="Logo">
+            </div>
+
+            <nav>
+                <a href="../index.html">Inicio</a>
+                <a href="../FlujoCorriente/FlujoCorriente.html">Flujo de Corriente</a>
+                <a href="../AlertaMaxima/AlertaMaxima.html">Alerta Máxima</a>
+                <a href="../Revisiones/Revisiones.html">Revisiones</a>
+                <a href="../Mantenimiento/Mantenimiento.html">Mantenimiento</a>
+            </nav>
+
+        </aside>
+
+        <!-- CONTENIDO -->
+        <main class="contenido">
+
+           <section>
         <div class="FlujoCorriente">
 
             <h1>Reporte</h1>
 
-            <p>
+            <p class="contenido_corriente">
                 Los reportes más actualizados sobre las quebradas y sus respectivas zonas,
                 en las cuales pedimos estar pendientes de las franjas en alerta o posibles torrenciales de agua.
             </p>
@@ -55,7 +71,7 @@
                 <div class="Historial_mes">
                 <h3>Reporte del mes</h3>
 
-                <canvas id="pie" width="300" height="300" style="background-color: #808080 border_radius 10px;"></canvas>
+                <canvas id="pie" width="280" height="250" margin="10px" style="background-color: #808080 border_radius 10px height 290 width 300 ;"></canvas>
 
                 <div class="leyenda">
                     <div class="item">
@@ -77,7 +93,7 @@
 
             <div class="Reporte">
                 <h2>Estado de Reportes</h2>
-                <p>
+                <p class="Reporte_informacion">
                     En esta sección se muestra el estado actual de los reportes,
                     indicando si están en buen estado, precaución o crítico.
                 </p>
@@ -92,7 +108,9 @@
         </div>
     </section>
 
-    <script src="FlujoCorriente.js"></script>
+        </main>
 
+    </div>
+ <script src="../Report.js"></script>
 </body>
 </html>
